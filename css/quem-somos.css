@@ -1,0 +1,39 @@
+.view#quem-somos #coluna-info,
+.view#quem-somos #coluna-devs {
+    width: 50%;
+    padding: 20px;
+}
+
+.view#quem-somos #coluna-info p,
+.view#quem-somos #coluna-info li {
+    font-size: 20px;
+}
+.view#quem-somos #coluna-devs {
+    display: flex;
+    flex-direction: column;
+}
+.view#quem-somos #coluna-devs .dev {
+    flex: 1 1 50%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+    position: relative;
+}
+.view#quem-somos #coluna-devs .dev .icone-linkedin {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+}
+.view#quem-somos #coluna-devs .dev h2 {
+    display: inline;
+}
+.view#quem-somos #coluna-devs .dev ul {
+    padding: 0px;
+}
+.view#quem-somos #coluna-devs .dev ul li {
+    display: inline;
+    border: 1px solid rgb(96, 156, 132);
+    padding: 4px 8px;
+    background-color: rgb(69, 111, 96);
+    color: #E0E0E0;
+}

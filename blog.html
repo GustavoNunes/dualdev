@@ -1,0 +1,10 @@
+<div ng-repeat='post in BlogController.posts | limitTo : 3'
+     ng-click='BlogController.postSelecionado = true' class='item'>
+    <h3>{{ post.titulo }}</h3>
+    <p><i class="fa fa-calendar"></i>&nbsp {{ post.data }}</p>
+</div>
+<div class='overlay' ng-if='BlogController.postSelecionado == true' ng-click='BlogController.postSelecionado = null'>
+    <div id='paginaLeitura'>
+
+    </div>
+</div>

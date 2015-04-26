@@ -1,0 +1,44 @@
+.view#portfolio-detalhes {
+
+}
+.view#portfolio-detalhes .coluna#info {
+    flex: 1 1;
+    padding: 0px 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.view#portfolio-detalhes .coluna#info h2 {
+    margin: 0px;
+}
+.view#portfolio-detalhes .coluna#info p {
+    margin-bottom: 0px;
+}
+.view#portfolio-detalhes .coluna#info .funcoes {
+    padding: 0px;
+}
+.view#portfolio-detalhes .coluna#info .funcoes li {
+    display: inline;
+    border: 1px solid rgb(96, 156, 132);
+    padding: 4px 8px;
+    margin-right: 2px;
+}
+.view#portfolio-detalhes .coluna#slider {
+    flex: 0 0 70%;
+    display: flex;
+}
+.view#portfolio-detalhes .coluna#slider .imagem {
+    flex: 1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.view#portfolio-detalhes .seta-slider {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view#portfolio-detalhes .seta-slider .fa {
+    cursor: pointer;
+}

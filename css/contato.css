@@ -1,0 +1,62 @@
+.view#contato {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.view#contato form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px 0px;
+}
+.view#contato form input,
+.view#contato form textarea {
+    background-color: rgba(84, 255, 167, 0.32);
+    border: 0px;
+    outline: none;
+    padding: 10px 10px;
+    display: block;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    margin: 0px auto 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    transition: all 0.3s;
+}
+.view#contato form input:focus,
+.view#contato form textarea:focus {
+    background-color: rgba(84, 255, 167, 0.45);
+}
+.view#contato form input[type="submit"] {
+    cursor: pointer;
+    width: 25%;
+    min-height: 45px;
+    margin-bottom: 0px;
+}
+.view#contato form input[type="submit"]:hover {
+    background-color: rgba(84, 255, 167, 0.45);
+}
+.view#contato #info p {
+    padding: 5px 20px;
+    margin: 0px;
+    font-size: 24px;
+    text-align: center;
+}
+@media (max-width: 1023px) {
+    .view#contato form {
+        width: 100%;
+    }
+    .view#contato form input,
+    .view#contato form textarea {
+        padding: 7px 10px;
+        font-size: 18px;
+        margin: 0px auto 12px;
+    }
+    .view#contato form input[type="submit"] {
+        width: 50%;
+    }
+    .view#contato #info p {
+        font-size: 18px;
+    }
+}

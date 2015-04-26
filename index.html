@@ -1,0 +1,36 @@
+<html ng-app='DualdevApp' ng-controller='MainController'>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DualDev</title>
+
+    <base href="/"></base>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/css/font-awesome.min.css' />
+    <link rel='stylesheet' href='/css/body.css' />
+    <link rel='stylesheet' href='/css/home.css' />
+    <link rel='stylesheet' href='/css/quem-somos.css' />
+    <link rel='stylesheet' href='/css/blog.css' />
+    <link rel='stylesheet' href='/css/contato.css' />
+    <link rel='stylesheet' href='/css/portfolio.css' />
+    <link rel='stylesheet' href='/css/portfolio-detalhes.css' />
+
+    <script type='text/javascript' src='/js/angular.min.js'></script>
+    <script type='text/javascript' src='/js/angular-route.min.js'></script>
+    <script type='text/javascript' src='/js/angular-animate.min.js'></script>
+    <script type='text/javascript' src='/js/app.js'></script>
+</head>
+<body>
+    <video autoplay loop><source src="/video/fundo.mp4" type="video/mp4"></video>
+    <div class='container' id='{{ MainController.idPagina }}'>
+        <div id='topo' ng-if='MainController.topoPagina'>
+            <a href='/'><img class='logo' src='/img/logo.png' /></a>
+            <h1>{{ MainController.topoPagina }}</h1>
+        </div>
+        <div id='{{ MainController.idPagina }}' class='view' ng-view></div>
+    </div>
+</body>
+</html>
