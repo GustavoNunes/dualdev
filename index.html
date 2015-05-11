@@ -21,10 +21,13 @@
     <script type='text/javascript' src='/js/angular.min.js'></script>
     <script type='text/javascript' src='/js/angular-route.min.js'></script>
     <script type='text/javascript' src='/js/angular-animate.min.js'></script>
+    <script type='text/javascript' src='/js/responsive-directive.js'></script>
     <script type='text/javascript' src='/js/app.js'></script>
 </head>
 <body>
-    <video autoplay loop><source src="/video/fundo.mp4" type="video/mp4"></video>
+    <div data-ar-lg>
+        <video autoplay loop><source ng-src="/video/fundo.mp4" type="video/mp4"></video>
+    </div>
     <div class='container' id='{{ MainController.idPagina }}'>
         <div id='topo' ng-if='MainController.topoPagina'>
             <a href='/'><img class='logo' src='/img/logo.png' /></a>
