@@ -1,4 +1,4 @@
-angular.module('DualdevApp', ['ngAnimate', 'ngRoute'])
+angular.module('DualdevApp', ['ngAnimate', 'ngRoute', 'angular-responsive'])
     .config(function($routeProvider, $locationProvider) {
         $routeProvider
             // Atributos utilizados no layout (index.html), através do ControllerPrincipal:
