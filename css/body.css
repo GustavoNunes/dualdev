@@ -27,15 +27,12 @@ video {
     position: relative;
     background-color: rgba(0, 0, 0, 0.93);
     background-image: url('/img/textura.png');
-    display: flex;
-    flex-direction: column;
     transition: all 1s;
 }
 .container#home {
     background-color: rgba(0, 0, 0, 0.75);
 }
 .view {
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
@@ -54,24 +51,27 @@ video {
     display: flex;
     width: 100%;
     align-items: center;
-    flex: 0 0 140px;
+    padding: 15px 15px 0px;
+    height: 15%;
 }
 #topo:after {
     content: "";
-    flex: 1;
 }
-#topo > * {
+#topo > a,
+#topo:after {
     flex: 1;
+    height: 100%;
 }
 #topo h1 {
-    flex: 7;
+    flex: 2;
     text-align: center;
-    font-size: 50px;
+    font-size: 28px;
     font-weight: normal;
     margin: 0px;
 }
 #topo .logo {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 .logo {
     background-image: url('/img/logo.png');
@@ -84,9 +84,21 @@ a {
     outline: none;
     text-decoration: none;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
+    #topo {
+        height: 20%;
+    }
     #topo h1 {
-        flex: 2px;
-        font-size: 35px;
+        font-size: 38px;
+    }
+}
+@media (min-width: 900px) {
+    #topo h1 {
+        font-size: 48px;
+    }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+    #topo {
+        min-height: 30%;
     }
 }
