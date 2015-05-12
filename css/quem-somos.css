@@ -1,12 +1,5 @@
-.view#quem-somos #coluna-info,
-.view#quem-somos #coluna-devs {
-    width: 50%;
-    padding: 20px;
-}
-
-.view#quem-somos #coluna-info p,
-.view#quem-somos #coluna-info li {
-    font-size: 20px;
+.view#quem-somos #coluna-info p:first-child {
+    margin-top: 0px;
 }
 .view#quem-somos #coluna-devs {
     display: flex;
@@ -15,7 +8,7 @@
 .view#quem-somos #coluna-devs .dev {
     flex: 1 1 50%;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0px;
     border: 1px solid;
     position: relative;
 }
@@ -29,11 +22,34 @@
 }
 .view#quem-somos #coluna-devs .dev ul {
     padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px;
 }
 .view#quem-somos #coluna-devs .dev ul li {
-    display: inline;
     border: 1px solid rgb(96, 156, 132);
-    padding: 4px 8px;
+    padding: 4px 15px;
     background-color: rgb(69, 111, 96);
     color: #E0E0E0;
+    margin: 1px;
+    list-style-type: none;
+    flex-grow: 1;
+    text-align: center;
+}
+@media (min-width: 700px) {
+    .view#quem-somos #coluna-info,
+    .view#quem-somos #coluna-devs {
+        width: 50%;
+        padding: 5px;
+    }
+    .view#quem-somos #coluna-info p:first-child {
+        margin-top: 25px;
+    }
+    .view#quem-somos #coluna-info p,
+    .view#quem-somos #coluna-info li {
+        font-size: 20px;
+    }
+    .view#quem-somos #coluna-devs .dev {
+        margin: 10px;
+    }
 }
