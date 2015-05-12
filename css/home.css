@@ -1,56 +1,75 @@
 .view#home {
     height: 100%;
     padding: 0px;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.92) 15%, rgba(0, 0, 0, 0) 100%);
+    align-content: space-between;
 }
 .view#home .logo {
     position: absolute;
-    top: 32%;
-    left: 39%;
-    width: 22%;
-    height: 36%;
+    top: 30%;
+    left: 28%;
+    width: 44%;
+    height: 40%;
     z-index: 2;
 }
 .view#home .botao {
     text-align: center;
     display: flex;
     width: 50%;
-    height: 50%;
+    height: 40%;
     cursor: pointer;
     transition: all 0.7s;
-}
-.view#home .botao:hover,
-.view#home .botao:focus {
-    background-color: rgba(84, 255, 167, 0.32) !important;
-    color: white;
 }
 .view#home .botao-conteudo {
     margin: auto;
 }
 .view#home .botao h2 {
     margin: 0px 0px 10px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
 }
-.view#home .botao#botao-quem-somos {
-    background: radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.92) 15%, rgba(0, 0, 0, 0) 100%);
-}
-.view#home .botao#botao-portfolio {
-    background: radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.92) 15%, rgba(0, 0, 0, 0) 100%);
-}
-.view#home .botao#botao-portfolio i {
-    padding: 18px 15px 12px;
-}
-.view#home .botao#botao-blog {
-    background: radial-gradient(circle at top right, rgba(0, 0, 0, 0.92) 15%, rgba(0, 0, 0, 0) 100%);
-}
-.view#home .botao#botao-contato {
-    background: radial-gradient(circle at top left, rgba(0, 0, 0, 0.92) 15%, rgba(0, 0, 0, 0) 100%);
-}
 .view#home .fa-in-circle {
-    font-size: 45px;
-    height: 80px;
-    width: 80px;
+    font-size: 27px;
+    height: 52px;
+    width: 52px;
     border: 1px solid;
-    border-radius: 50px;
-    padding: 15px;
+    border-radius: 100px;
+    padding: 10px;
+}
+.view#home .botao#botao-portfolio .fa-in-circle {
+    padding: 12px 10px 10px;
+}
+@media (min-width: 1200px) {
+    .view#home {
+        background: none;
+    }
+    .view#home .botao {
+        height: 50%;
+    }
+    .view#home .botao:hover,
+    .view#home .botao:focus {
+        background-color: rgba(84, 255, 167, 0.32) !important;
+        color: white;
+    }
+    .view#home .botao#botao-quem-somos {
+        background: radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.92) 15%, rgba(0, 0, 0, 0) 100%);
+    }
+    .view#home .botao#botao-portfolio {
+        background: radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.92) 15%, rgba(0, 0, 0, 0) 100%);
+    }
+    .view#home .botao#botao-blog {
+        background: radial-gradient(circle at top right, rgba(0, 0, 0, 0.92) 15%, rgba(0, 0, 0, 0) 100%);
+    }
+    .view#home .botao#botao-contato {
+        background: radial-gradient(circle at top left, rgba(0, 0, 0, 0.92) 15%, rgba(0, 0, 0, 0) 100%);
+    }
+    .view#home .fa-in-circle {
+        font-size: 31px;
+        height: 60px;
+        width: 60px;
+        padding: 12px;
+    }
+    .view#home .botao#botao-portfolio .fa-in-circle {
+        padding: 14px 10px 12px;
+    }
 }
